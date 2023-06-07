@@ -462,7 +462,7 @@ header {
     list-style-type: none;
     justify-content: space-between;
     padding: 1rem;
-    gap: 10px;
+    gap: 11px;
 }
 
 .addres-discript h4 {
@@ -476,14 +476,230 @@ header {
 }
 
 
+.resume-edu{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 4rem 3rem;
+    width: 100%;
+}
+
+.resume-edu-heading{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: green;
+    margin-bottom: 1rem;
+    text-align: center;
+    justify-self: center;
+    margin-right: 5rem;
+}
+
+.resume-tech-heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: green;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+
+}
+
+.resume-edu-details{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.resume-edu-details h2{
+    font-weight: 700;
+    color: purple;
+}
+
+.resume-edu-card-desc-text{
+    width: 600px;
+    max-width: 100%;
+}
+
+.resume-edu-details h3{
+    font-weight: 700;
+    color: green;
+    font-style: italic;
+}
+
+.resume-edu-card-desc-date{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: purple;
+    margin: .5rem 0;
+    padding: 0px;
+}
+
+.resume-edu-details p + p {
+    margin-top: 1rem;
+    color: #000000;
+    opacity: 0.8;
+    padding: 0px;
+}
+
+.resume-techs-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.resume-tech-card{
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #220739;
+    color: #fff;
+    border-radius: 4px;
+    width: 300px;
+    height: 310px;
+    overflow-y: scroll;
+    box-shadow: 2px 2px 49px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 49px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 49px -12px rgba(0,0,0,0.75);
+}
+
+.resume-tech-card-title{
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: green;
+}
+
+.resume-tech-card-desc{
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.resume-tech-card-desc>ul>li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+.start-text{
+    font-weight: 600;
+    font-style: italic;
+    margin-right: 0.5rem;
+}
+.resume-tech-card-desc>ul{
+    display: flex;
+    margin-top: .5em;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    gap: .6rem;
+}
+
+.resume-tech-card-icon>svg{
+    width: 2rem;
+    height: 2rem;
+    fill: green;
+}
+
+.testimonials-container{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    width: 100%;
+    height: calc(100vh - 92px);
+    margin: 0 auto;
+    gap: 3rem;
+    padding: 3rem;
+    border-radius: .7rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scroll-padding: 2rem;
+}
+
+.testimonials-container::-webkit-scrollbar{
+    display: none;
+}
+
+.testimonial{
+    display: flex;
+    flex: 0 0 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 400px;
+    max-width: 98vw;
+    height: fit-content;
+    align-content: center;
+    background-color: #220739;
+    color: #fff;
+    border-radius: 14px;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.testimonial-text{
+    display: flex;
+    padding: .75rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.testimonial h3{
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: green;
+}
+
+.testimonial h4{
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.testimonial img{
+    width: 25vh;
+    height: 25vh;
+    max-width: 240px;
+    max-height: 240px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.testimonial p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
 
 @media (max-width: 810px){
     .about-details{
         flex-flow: column nowrap;
         text-align: center;
+        padding: 0px;
+        height: 100%;
     }
     .about-text-area{
         flex: 1;
+        width: 100%;
+        height: 100%;
+        box-shadow: unset;
     }
     .about-image{
         display: none;
@@ -496,5 +712,15 @@ header {
     }
     .menu{
         display: none;
+    }
+    .page-hero{ 
+        border-bottom: 0.2px solid green;
+        margin: unset;
+    }
+    .resume-edu{
+        flex-flow: column nowrap;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
     }
 }
